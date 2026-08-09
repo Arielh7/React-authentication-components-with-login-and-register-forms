@@ -1,15 +1,8 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AuthLayout from "./layout/auth/auth-layout";
-function App() {
-  const [count, setCount] = useState(0);
+import { useState } from "react";
+import Login from "./pages/auth/Login";
 
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<AuthLayout />}></Route>
-      </Routes>
-    </BrowserRouter>
-  );
+function App() {
+  return <></>;
 }
 
 export default App;
