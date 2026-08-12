@@ -24,6 +24,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     setServerError("");
 
+    //simulo llamada a db
     try {
       await new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -64,16 +65,13 @@ const Login = () => {
               {...register("email", {
                 required: "El email es obligatorio",
                 pattern: {
-                  value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/,
+                  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                   message: "Formato de email inválido",
                 },
               })}
             />
             {errors.email && (
               <p className="login-error-message">{errors.email.message}</p>
-            )}
-            {watchEmail && !errors.email && (
-              <p className="login-error-message valid-message">Email válido</p>
             )}
           </div>
 
@@ -85,34 +83,11 @@ const Login = () => {
                 placeholder="Contraseña"
                 {...register("password", {
                   required: "La contraseña es obligatoria",
-                  minLength: {
-                    value: 8,
-                    message: "La contraseña debe tener al menos 8 caracteres",
-                  },
-                  maxLength: {
-                    value: 12,
-                    message: "La contraseña debe tener hasta 12 caracteres",
-                  },
-                  validate: {
-                    hasUpperCase: (value) =>
-                      /[A-Z]/.test(value) ||
-                      "Debe tener al menos una mayúscula",
-                    hasLowerCase: (value) =>
-                      /[a-z]/.test(value) ||
-                      "Debe tener al menos una minúscula",
-                    hasNumber: (value) =>
-                      /[0-9]/.test(value) || "Debe tener al menos un número",
-                  },
                 })}
               />
 
               {errors.password && (
                 <p className="login-error-message">{errors.password.message}</p>
-              )}
-              {watchPassword && !errors.password && (
-                <p className="login-error-message valid-message">
-                  Contraseña válida
-                </p>
               )}
             </div>
           </div>
@@ -145,7 +120,7 @@ const Login = () => {
             {isSubmitting ? "Cargando..." : "Iniciar Sesion"}
           </button>
 
-          <div>
+          <div className="register-text-container">
             <p id="register-text" className="register-text">
               No tienes cuenta?{"  "}
               <a href="#" className="register-link">

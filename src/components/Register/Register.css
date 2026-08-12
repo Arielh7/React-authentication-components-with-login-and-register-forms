@@ -3,7 +3,7 @@
   transition: all 0.3s ease;
 }
 
-.login-container {
+.register-container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -12,7 +12,7 @@
   background: white;
 }
 
-.login-modal {
+.register-modal {
   background: #fff;
   border: 1px solid #ececec;
   box-shadow:
@@ -21,7 +21,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     inset 0 0 0 1px rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-  min-height: 400px;
+  min-height: 525px;
   height: auto;
   width: 400px;
   overflow: hidden;
@@ -29,21 +29,22 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
-.login-title-container {
+.register-title-container {
   display: grid;
   height: 40%;
   gap: 10px;
 }
-.login-title {
+.register-title {
   text-align: center;
   margin: 50px 0 0 0;
   font-size: 30px;
   font-weight: 700;
 }
 
-.login-form {
+.register-form {
   width: 85%;
   height: 60%;
   display: flex;
@@ -51,7 +52,7 @@
   justify-content: space-between;
 }
 
-.login-input {
+.register-input {
   width: 100%;
   outline: none;
   border: 1px solid black;
@@ -67,7 +68,7 @@
   border: 1px solid green;
 }
 
-.login-input-container {
+.register-input-container {
   position: relative;
 }
 
@@ -82,7 +83,7 @@
   }
 }
 
-.login-error-message {
+.register-error-message {
   position: absolute;
   color: red;
   font-size: 10px;
@@ -95,15 +96,14 @@
   color: green;
 }
 
-.login-remember-forgot {
+.register-remember-forgot {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.login-forgot {
+.register-forgot {
   width: 40%;
   text-align: center;
 }
@@ -115,23 +115,23 @@
   font-weight: 500;
 }
 
-.login-remember-checkbox {
+.register-remember-checkbox {
   accent-color: black;
   cursor: pointer;
   margin-left: 0;
   margin-right: 10px;
 }
 
-.login-remember {
+.register-remember {
   display: flex;
   align-items: center;
 }
 
-.login-remember-label {
+.register-remember-label {
   font-size: 15px;
 }
 
-.login-submit-button {
+.register-submit-button {
   background-color: black;
   color: white;
   border: none;
@@ -141,12 +141,12 @@
   transition: all 0.2s ease;
 }
 
-.login-submit-button:hover {
+.register-submit-button:hover {
   background-color: rgb(56, 56, 56);
   transform: translate(0, -1px);
 }
 
-.login-submit-button:disabled {
+.register-submit-button:disabled {
   background-color: #ccc;
   cursor: default;
 }
@@ -164,7 +164,7 @@
   animation: in 0.3s ease;
 }
 
-.login-remember-label {
+.register-remember-label {
   text-align: center;
 }
 
@@ -178,29 +178,44 @@
 }
 
 @media (max-width: 700px) {
-  .login-modal {
+  .register-modal {
     width: 100%;
     height: 100vh;
   }
 
-  .login-submit-button:active {
+  .register-submit-button:active {
     background-color: rgb(56, 56, 56);
     transform: translate(0, -1px);
   }
+}
 
-  .forgot-password {
-    font-size: 15px;
-  }
-  .login-forgot {
-    width: 100%;
-    text-align: start;
-  }
+.register-policy-checkbox-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 20px;
+  gap: 5px;
+  position: relative;
+}
 
-  .login-remember-forgot {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-bottom: 10px;
-    gap: 10px;
-  }
+.register-policy-checkbox {
+  accent-color: black;
+  cursor: pointer;
+}
+
+.terms-link {
+  color: black;
+}
+
+.policy {
+  bottom: -25px;
+}
+
+.login-text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-link {
+  color: black;
 }

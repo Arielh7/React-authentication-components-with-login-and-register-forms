@@ -1,16 +1,38 @@
-# React + Vite
+React Auth Components - Login & Register
+https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat&logo=react
+https://img.shields.io/badge/Vite-4.0.0-646CFF?style=flat&logo=vite
+https://img.shields.io/badge/React_Hook_Form-7.45.0-EC5990?style=flat&logo=reacthookform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Description:
 
-Currently, two official plugins are available:
+Modern and responsive authentication components built with React + Vite. Includes Login and Register forms with advanced validation using react-hook-form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Features
+-Login with basic field validation
 
-## React Compiler
+-Register with advanced validations:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Full name (letters and spaces only)
 
-## Expanding the Oxlint configuration
+Email with strict format validation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Secure password (uppercase, lowercase, number)
+
+Password confirmation
+
+Terms and conditions acceptance
+
+✅ Show/Hide password toggle
+
+✅ Real-time password requirements
+
+✅ Visual feedback with states (error, valid)
+
+✅ Responsive design for all devices
+
+✅ Smooth animations
+
+✅ Server error handling
+
+![Register Form](./screenshots/screenshoot-1.png)
+![Password Validation](./screenshots/screenshoot-2.png)
