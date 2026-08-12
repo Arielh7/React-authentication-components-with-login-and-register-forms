@@ -107,7 +107,7 @@
 
 .forgot-password {
   font-size: 10px;
-  text-decoration: none;
+
   color: black;
   font-weight: 500;
 }
@@ -143,7 +143,7 @@
 }
 
 .register-link {
-  text-decoration: none;
+  color: black;
 }
 
 .server-error-message {
