@@ -101,7 +101,7 @@ const Login = () => {
                 {...register("rememberMe")}
               ></input>
               <label htmlFor="rememberMe" className="login-remember-label">
-                Remember me
+                Recuerdame
               </label>
             </div>
 
