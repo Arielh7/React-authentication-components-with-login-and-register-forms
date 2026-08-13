@@ -34,5 +34,5 @@ Terms and conditions acceptance
 
 ✅ Server error handling
 
-![Register Form](./screenshots/screenshoot-1.png)
-![Password Validation](./screenshots/screenshoot-2.png)
+![Register Form](./screenshots/screenshot-1.png)
+![Password Validation](./screenshots/screenshot-2.png)
