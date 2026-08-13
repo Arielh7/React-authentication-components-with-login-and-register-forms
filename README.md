@@ -8,12 +8,12 @@
 
 Modern and responsive authentication components built with **React + Vite**. Includes **Login** and **Register** forms with advanced validation using `react-hook-form`. Perfect for quick integration into any React project.
 
+
 <p align="center">
   <img src="./screenshots/screenshot-1.png" alt="Register Form" width="45%" />
   <img src="./screenshots/screenshot-2.png" alt="Password Validation" width="45%" />
 </p>
 
-> **Note:** Replace the image paths above with your actual screenshot filenames.
 
 ## Features
 
